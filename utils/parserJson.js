@@ -65,7 +65,7 @@ const parserJson = async (url, folderTarget, filename) => {
 	}
 
 	function isEmpty(obj) {
-		return Object.values(obj).length === 0;
+		return Object.keys(obj) && Object.values(obj).length === 0;
 	}
 
 	if (isEmpty(extractContent.content)) {
